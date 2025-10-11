@@ -18,8 +18,7 @@ I performed a data quality check to ensure it is clean and ready for analysis. T
 
 **To Find Incorrect Data Types:**
 
-I used: ```df.dtypes``` to find the columns with incorrect data types.
-
+I used: ```df.dtypes``` to find the columns with incorrect data types as shown below:
 ```
 Complaint ID                             int64
 Date Sumbited                   datetime64[ns]
