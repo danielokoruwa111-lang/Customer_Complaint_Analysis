@@ -28,6 +28,7 @@ Timely response?                        object
 Consumer disputed?                      object
 dtype: object```
 
+
 ## Data Cleaning
 I performed a data quality check to ensure it is clean and ready for analysis. These were the data issues I found and rectified.
 1. **Incorrect Data Types:**
