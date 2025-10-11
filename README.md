@@ -13,7 +13,7 @@ I read the above info from the dataset using:
 
 ```df.head()```
 
-```Complaint ID                             int64
+```Complaint ID                             int64```
 Date Sumbited                   datetime64[ns]
 Product                                 object
 Issue                                   object
@@ -26,7 +26,7 @@ Response Time (Days)                     int64
 Company response to consumer            object
 Timely response?                        object
 Consumer disputed?                      object
-dtype: object```
+```dtype: object```
 
 
 ## Data Cleaning
