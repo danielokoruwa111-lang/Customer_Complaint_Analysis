@@ -36,6 +36,15 @@ Consumer disputed?                      object
 dtype: object
 ``` 
 
-**To Rectufy the incorrect Data Types**
-
-I used: 
+I rectified the concerned columns as shown below:
+```
+df['Product'] = df['Product'].astype('string')
+df['Issue'] = df['Issue'].astype('string')
+df['Company'] = df['Company'].astype('string')
+df['State'] = df['State'].astype('string')
+df['Consumer consent provided?'] = df['Consumer consent provided?'].astype('bool')
+df['Submitted via'] = df['Submitted via'].astype('string')
+df['Company response to consumer'] = df['Company response to consumer'].astype('string')
+df['Timely response?'] = df['Timely response?'].astype('bool')
+df['Consumer disputed?'] = df['Consumer disputed?'].astype('bool')
+```
