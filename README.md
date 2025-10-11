@@ -5,6 +5,7 @@ This Analysis is to identify and understand consumers complaint and how to recti
 This dataset was gotten from [Kaggle](https://www.kaggle.com/). This dataset consists of 13 columns and 75513 rows. The kind of information found in the table includes:
 Complaint Details, Product and Issue, Company Information, Consumer Information, Submission and Response.
 I read the above info from the dataset using:
+
 ```import pandas as pd```
 ```df = pd.read_excel('Financial Consumer Complaints.xlsx')```
 ```df.head()```
