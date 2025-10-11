@@ -11,6 +11,15 @@ I read the above info from the dataset using:
 df = pd.read_excel('Financial Consumer Complaints.xlsx')
 df.head()
 ```
+
+## Data Cleaning
+I performed a data quality check to ensure it is clean and ready for analysis. These were the data issues I found and rectified.
+1. **Incorrect Data Types:**
+
+**To Find Incorrect Data Types:**
+
+I used: ```df.dtypes``` to find the columns with incorrect data types.
+
 ```
 Complaint ID                             int64
 Date Sumbited                   datetime64[ns]
@@ -26,11 +35,8 @@ Company response to consumer            object
 Timely response?                        object
 Consumer disputed?                      object
 dtype: object
-```                          
+``` 
 
-## Data Cleaning
-I performed a data quality check to ensure it is clean and ready for analysis. These were the data issues I found and rectified.
-1. **Incorrect Data Types:**
+**To Rectufy the incorrect Data Types**
 
-**To Find Incorrect Data Types:**
 I used: 
