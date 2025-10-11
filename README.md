@@ -14,20 +14,19 @@ I read the above info from the dataset using:
 ```df.head()```
 
 ```Complaint ID                             int64```
-Date Sumbited                   datetime64[ns]
-Product                                 object
-Issue                                   object
-Company                                 object
-State                                   object
-Consumer consent provided?              object
-Submitted via                           object
-Date Received                   datetime64[ns]
-Response Time (Days)                     int64
-Company response to consumer            object
-Timely response?                        object
-Consumer disputed?                      object
-```dtype: object```
-
+```Date Sumbited                   datetime64[ns]```
+```Product                                 object```
+```Issue                                   object```
+```Company                                 object```
+```State                                   object```
+```Consumer consent provided?              object```
+```Submitted via                           object```
+```Date Received                   datetime64[ns]```
+```Response Time (Days)                     int64```
+```Company response to consumer            object```
+```Timely response?                        object```
+```Consumer disputed?                      object```
+```dtype: object```                           
 
 ## Data Cleaning
 I performed a data quality check to ensure it is clean and ready for analysis. These were the data issues I found and rectified.
