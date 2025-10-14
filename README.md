@@ -36,7 +36,7 @@ Consumer disputed?                      object
 dtype: object
 ``` 
 
-I rectified the concerned columns as shown below:
+I rectified the incorrect data types of the concerned columns by using the below:
 ```
 df['Product'] = df['Product'].astype('string')
 df['Issue'] = df['Issue'].astype('string')
