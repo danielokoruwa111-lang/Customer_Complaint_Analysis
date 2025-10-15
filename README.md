@@ -48,6 +48,24 @@ df['Submitted via'] = df['Submitted via'].astype('string')
 df['Company response to consumer'] = df['Company response to consumer'].astype('string')
 df['Timely response?'] = df['Timely response?'].astype('bool')
 df['Consumer disputed?'] = df['Consumer disputed?'].astype('bool')
+df.dtypes
+```
+The correct Data types is shown below:
+```
+Complaint ID                             int64
+Date Sumbited                   datetime64[ns]
+Product                         string[python]
+Issue                           string[python]
+Company                         string[python]
+State                           string[python]
+Consumer consent provided?                bool
+Submitted via                   string[python]
+Date Received                   datetime64[ns]
+Response Time (Days)                     int64
+Company response to consumer    string[python]
+Timely response?                          bool
+Consumer disputed?                        bool
+dtype: object
 ```
 2. **Missing Values**
 
@@ -77,6 +95,24 @@ I rectified the missing values of the concerned columns by using the below:
 df[df['Company'].isnull()]
 df.loc[df['Company'].isnull(), 'Company'] = 'unknown'
 df.loc[df['State'].isnull(), 'State'] = 'unknown'
+df.isnull().sum()
+```
+The rectified missing values are shown below:
+```
+Complaint ID                    0
+Date Sumbited                   0
+Product                         0
+Issue                           0
+Company                         0
+State                           0
+Consumer consent provided?      0
+Submitted via                   0
+Date Received                   0
+Response Time (Days)            0
+Company response to consumer    0
+Timely response?                0
+Consumer disputed?              0
+dtype: int64
 ```
 3. **Duplicate Rows**
 
@@ -92,7 +128,7 @@ I used: ```df.drop_duplicates(inplace = True)``` to rectify the duplicate rows.
 
  **To Find Wrong Spelling**
 
- I used: ```df['Submitted via'].drop_duplicates())``` to find wrong spelling on Submitted via column as shown below:
+ I used: ```df['Submitted via'].drop_duplicates()``` to find wrong spelling on Submitted via column as shown below:
  ```
 0                Web
 2           Referral
@@ -110,6 +146,17 @@ I rectified the wrong spelling of the Submitted via columns by using the below:
 ```
 df.loc[df['Submitted via'] == 'Webbb', 'Submitted via'] = 'Web'
 df.loc[df['Submitted via'] == 'Faxe', 'Submitted via'] = 'Fax'
+df['Submitted via'].drop_duplicates()
+```
+The rectified wrong spelling is shown below:
+```
+0               Web
+2          Referral
+11            Phone
+17      Postal mail
+27              Fax
+2646          Email
+Name: Submitted via, dtype: string
 ```
 
 5. **Number of Rows and Colunms**
