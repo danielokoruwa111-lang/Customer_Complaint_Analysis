@@ -88,18 +88,37 @@ I used: ```df[df.duplicated()]``` to find the duplicate rows.
 
 I used: ```df.drop_duplicates(inplace = True)``` to rectify the duplicate rows.
 
- **Wrong Spelling**
+ 4. **Wrong Spelling**
 
  **To Find Wrong Spelling**
 
  I used: ```df['Submitted via'].drop_duplicates())``` to find wrong spelling on Submitted via column as shown below:
  ```
-0               Web
-2          Referral
-11            Phone
-17      Postal mail
-27              Fax
-2646          Email
+0                Web
+2           Referral
+11             Phone
+17       Postal mail
+27               Fax
+443             Faxe
+2646           Email
+41060          Webbb
 Name: Submitted via, dtype: string
 ```
+**To Rectify Wrong Spelling**
 
+I rectified the wrong spelling of the Submitted via columns by using the below:
+```
+df.loc[df['Submitted via'] == 'Webbb', 'Submitted via'] = 'Web'
+df.loc[df['Submitted via'] == 'Faxe', 'Submitted via'] = 'Fax'
+```
+
+5. **Number of Rows and Colunms**
+
+**To Find Number of Rows and Columns**
+
+I used the below to get the know of rows and columns:
+```
+print(df.shape)
+print(f"Number of rows: {df.shape[0]}")
+print(f"Number of columns: {df.shape[1]}")
+```
