@@ -35,6 +35,7 @@ Timely response?                        object
 Consumer disputed?                      object
 dtype: object
 ``` 
+**To Rectify Incorrect Data Types**
 
 I rectified the incorrect data types of the concerned columns by using the below:
 ```
@@ -48,3 +49,57 @@ df['Company response to consumer'] = df['Company response to consumer'].astype('
 df['Timely response?'] = df['Timely response?'].astype('bool')
 df['Consumer disputed?'] = df['Consumer disputed?'].astype('bool')
 ```
+2. **Missing Values**
+
+**To Find Missing Values:**
+
+I used: ```df.isnull().sum()``` to find the columns with missing values as shown below:
+```
+Complaint ID                       0
+Date Sumbited                      0
+Product                            0
+Issue                              0
+Company                           18
+State                           2893
+Consumer consent provided?         0
+Submitted via                      0
+Date Received                      0
+Response Time (Days)               0
+Company response to consumer       0
+Timely response?                   0
+Consumer disputed?                 0
+dtype: int64
+```
+**To Rectify Missing Values:**
+
+I rectified the missing values of the concerned columns by using the below:
+```
+df[df['Company'].isnull()]
+df.loc[df['Company'].isnull(), 'Company'] = 'unknown'
+df.loc[df['State'].isnull(), 'State'] = 'unknown'
+```
+3. **Duplicate Rows**
+
+**To Find Duplicate Rows**
+
+I used: ```df[df.duplicated()]``` to find the duplicate rows.
+
+**To Rectify Duplicate Rows**
+
+I used: ```df.drop_duplicates(inplace = True)``` to rectify the duplicate rows.
+
+ **Wrong Spelling**
+
+ **To Find Wrong Spelling**
+
+ I used: ```df['Submitted via'].drop_duplicates())``` to find wrong spelling on Submitted via column as shown below:
+ ```
+0               Web
+2          Referral
+11            Phone
+17      Postal mail
+27              Fax
+2646          Email
+Name: Submitted via, dtype: string
+```
+
