@@ -169,3 +169,25 @@ print(df.shape)
 print(f"Number of rows: {df.shape[0]}")
 print(f"Number of columns: {df.shape[1]}")
 ```
+
+## Analysis and Insights
+**1. What are the top 5 products customers have a complaint about?**
+For analysis, I used the below:
+```
+df['Product'].value_counts().head(5)
+```
+To gain insight, I used the below:
+```
+import matplotlib.pyplot as plt
+top_5_products = df['Product'].value_counts().head(5)
+
+# Plot a bar chart
+plt.figure(figsize=(7,5))
+top_5_products.plot(kind='bar')
+plt.title('Top 5 Products with Complaints')
+plt.xlabel('Product')
+plt.ylabel('Number of Complaints')
+plt.xticks(rotation=50)
+plt.tight_layout()
+plt.show()
+```
