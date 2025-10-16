@@ -172,6 +172,7 @@ print(f"Number of columns: {df.shape[1]}")
 
 ## Analysis and Insights
 **1. What are the top 5 products customers have a complaint about?**
+
 For analysis, I used the below:
 ```
 df['Product'].value_counts().head(5)
