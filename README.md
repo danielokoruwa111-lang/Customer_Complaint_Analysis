@@ -192,3 +192,23 @@ plt.xticks(rotation=50)
 plt.tight_layout()
 plt.show()
 ```
+
+**2. What are the top 5 issues that are commonly reported?**
+
+For analysis, I used the below:
+```df['Issue'].value_counts().head(5)
+```
+To gain insight, I used the below:
+```
+top_5_issues = df['Issue'].value_counts().head(5)
+
+# Plot a bar chart
+plt.figure(figsize=(7,5))
+top_5_issues.plot(kind='bar')
+plt.title('Top 5 issues commonly reported')
+plt.xlabel('Issue')
+plt.ylabel('Number of Reports')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
+```
