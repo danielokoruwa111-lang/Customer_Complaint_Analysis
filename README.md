@@ -177,7 +177,17 @@ For analysis, I used the below:
 ```
 df['Product'].value_counts().head(5)
 ```
-To gain insight, I used the below:
+Result:
+```
+Product
+Credit card                    19176
+Checking or savings account    13436
+Mortgage                       12470
+Credit card or prepaid card    10241
+Bank account or service         9893
+Name: count, dtype: Int64
+```
+To gain insight, I used the below to visualize:
 ```
 import matplotlib.pyplot as plt
 top_5_products = df['Product'].value_counts().head(5)
@@ -192,6 +202,7 @@ plt.xticks(rotation=50)
 plt.tight_layout()
 plt.show()
 ```
+
 
 **2. What are the top 5 issues that are commonly reported?**
 
