@@ -213,3 +213,19 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 ```
+**2. Which submission channels are most commonly used for complaints?**
+
+For analysis, I used the below:
+```
+df['Submitted via'].drop_duplicates()
+```
+To gain insight, I used the below:
+```
+# Plot a pie chart
+submission_channels = df['Submitted via'].value_counts()
+
+plt.figure(figsize=(10,5))
+plt.pie(submission_channels, labels=submission_channels.index, autopct='%1.0f%%')
+plt.title('Submission Channels for Complaints')
+plt.show()
+```
