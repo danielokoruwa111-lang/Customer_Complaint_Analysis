@@ -202,7 +202,7 @@ plt.xticks(rotation=50)
 plt.tight_layout()
 plt.show()
 ```
-
+![Top_5_Products_with_Complaints](images/Top_5_Products_with_Complaints.PNG)
 
 **2. What are the top 5 issues that are commonly reported?**
 
