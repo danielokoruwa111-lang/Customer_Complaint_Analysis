@@ -306,6 +306,14 @@ For analysis, I used the below:
 ```
 df['Issue'].value_counts().head(3)
 ```
+Result:
+```
+Issue
+Managing an account               8849
+Deposits and withdrawals          6127
+Trouble during payment process    3534
+Name: count, dtype: Int64
+```
 To gain insight, I used the below:
 ```
 # Plot a Pie Chart:
