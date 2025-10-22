@@ -263,7 +263,7 @@ plt.pie(submission_channels, labels=submission_channels.index, autopct='%1.0f%%'
 plt.title('Submission Channels for Complaints')
 plt.show()
 ```
-![Submission_Channels_For_Complaints](SubmissionChannelsForComplaints.PNG)
+![Submission_Channels_For_Complaints](images/SubmissionChannelsForComplaints.PNG)
 
 **4. Which submission channels have the highest non timely response?**
 
