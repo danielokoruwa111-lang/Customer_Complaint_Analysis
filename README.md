@@ -213,7 +213,7 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 ```
-**2. Which submission channels are most commonly used for complaints?**
+**3. Which submission channels are most commonly used for complaints?**
 
 For analysis, I used the below:
 ```
@@ -227,5 +227,63 @@ submission_channels = df['Submitted via'].value_counts()
 plt.figure(figsize=(10,5))
 plt.pie(submission_channels, labels=submission_channels.index, autopct='%1.0f%%')
 plt.title('Submission Channels for Complaints')
+plt.show()
+```
+**4. Which submission channels have the highest non timely response?**
+
+For analysis, I used the below:
+```
+# Find the average response time for each submission channel and sort the result.
+df.groupby('Submitted via')['Response Time (Days)'].mean().sort_values(ascending=False).round(2)
+```
+To gain insight, I used the below:
+```
+# Plot a Seaborn Bar Chart
+import seaborn as sns
+avg_response_time = df.groupby('Submitted via')['Response Time (Days)'].mean().sort_values(ascending=False).round(2)
+
+plt.figure(figsize=(6,4))
+sns.barplot(x=avg_response_time.index, y=avg_response_time.values)
+plt.title('Average Response Time by Submission Channel')
+plt.xlabel('Submission Channel')
+plt.ylabel('Average Response Time (Days)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
+```
+**5. What are the top 3 issues the consumers disputed the most?**
+
+For analysis, I used the below:
+```
+df['Issue'].value_counts().head(3)
+```
+To gain insight, I used the below:
+```
+# Plot a Pie Chart:
+
+top_3_issues = df['Issue'].value_counts().head(3)
+
+plt.figure(figsize=(10,6))
+plt.pie(top_3_issues, labels=top_3_issues.index, autopct='%1.1f%%')
+plt.title('Top 3 Issues Disputed by Consumers')
+plt.show()
+```
+**6. Which state did most of the complaints come from?**
+
+For analysis, I used the below:
+```
+df['State'].value_counts().head(1)
+```
+To gain insight, I used the below:
+```
+top_state = df['State'].value_counts().head(5)
+
+plt.figure(figsize=(6,4))
+top_state.plot(kind='bar')
+plt.title('State with the Most Complaints')
+plt.xlabel('State')
+plt.ylabel('Number of Complaints')
+plt.xticks(rotation=45)
+plt.tight_layout()
 plt.show()
 ```
