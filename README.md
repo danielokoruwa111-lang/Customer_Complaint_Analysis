@@ -241,7 +241,7 @@ plt.show()
 ```
 ![Top_5_Issues_Commonly_Reported](images/Top5IssuesCommonlyReported.PNG)
 
-**Insight**
+**Insight**:
 
 The top 5 issues reported by customers are account management, deposits/withdrawals, payment processing troubles, mortgage payment struggles, and disputed purchases, highlighting operational and transactional pain points.
 
@@ -273,7 +273,7 @@ plt.show()
 ```
 ![Submission_Channels_For_Complaints](images/SubmissionChannelsForComplaints.PNG)
 
-**Insight**
+**Insight**:
 
 The majority of complaints are submitted through the web (50%), followed by referrals (30%), indicating a strong preference for digital and personal recommendation channels.
 
@@ -312,7 +312,7 @@ plt.show()
 ```
 ![Average_Response_Time_By_Submission_Channels](images/AverageResponseTimeBySubmissionChannels.PNG)
 
-**Insight**
+**Insight**:
 
 Complaints submitted via email have the highest rate of non-timely responses (5.95), indicating a need to improve response times for email inquiries.
 
@@ -344,6 +344,7 @@ plt.show()
 ![3_Top_Issues_Disputed_By_Consumers](images/3TopIssuesDisputedByConsumers.PNG)
 
 **Insight**:
+
 Nearly half of consumer disputes relate to account management, indicating significant pain points in account handling and service delivery.
 
 **6. Which state did most of the complaints come from?**
@@ -373,6 +374,19 @@ plt.show()
 ```
 ![State_With_Most_Complaints](images/StateWithMostComplaints.PNG)
 
-**Insight**
+**Insight**:
 
 California leads in complaints with 12,107 issues, indicating a significant customer experience challenge in this key market.
+
+**Recommendation**
+
+1. **Enhance credit card customer support**: Address frequent issues and improve service delivery to reduce complaints.
+2. **Improve account management processes**: Streamline account handling and communication to alleviate common pain points.
+3. **Leverage web and referral channels effectively**: Optimize complaint handling and response times in these key channels.
+4. **Urgent attention to email responses needed**: Prioritize timely responses to improve customer satisfaction.
+5. **Target account management and transaction issues**: Focus on improving these high-dispute areas to enhance customer experience.
+6. **Boost customer support in California**: Address the high complaint volume with targeted improvements and resource allocation.
+
+**Conclusion**
+
+The analysis highlights key areas for improvement, including credit card services, account management, and transaction processing. Web and referral channels are crucial for complaint submission, but email responses require urgent attention. Targeted improvements in California and focus on high-dispute areas can enhance customer experience and reduce complaints.
