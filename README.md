@@ -235,7 +235,7 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 ```
-![Top_5_Issues_Commonly_Reported](Top5IssuesCommonlyReported.PNG)
+![Top_5_Issues_Commonly_Reported](Issues.PNG)
 
 **3. Which submission channels are most commonly used for complaints?**
 
