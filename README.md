@@ -298,6 +298,8 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 ```
+![Average_Response_Time_By_Submission_Channels](images/AverageResponseTimeBySubmissionChannels.PNG)
+
 **5. What are the top 3 issues the consumers disputed the most?**
 
 For analysis, I used the below:
