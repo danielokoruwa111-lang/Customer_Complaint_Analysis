@@ -243,6 +243,16 @@ For analysis, I used the below:
 ```
 df['Submitted via'].drop_duplicates()
 ```
+Result:
+```
+0               Web
+2          Referral
+11            Phone
+17      Postal mail
+27              Fax
+2646          Email
+Name: Submitted via, dtype: string
+```
 To gain insight, I used the below:
 ```
 # Plot a pie chart
