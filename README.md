@@ -333,6 +333,12 @@ For analysis, I used the below:
 ```
 df['State'].value_counts().head(1)
 ```
+Result:
+```
+State
+CA    12107
+Name: count, dtype: Int64
+```
 To gain insight, I used the below:
 ```
 top_state = df['State'].value_counts().head(5)
