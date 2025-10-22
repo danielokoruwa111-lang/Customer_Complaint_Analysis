@@ -325,6 +325,8 @@ plt.pie(top_3_issues, labels=top_3_issues.index, autopct='%1.1f%%')
 plt.title('Top 3 Issues Disputed by Consumers')
 plt.show()
 ```
+![3_Top_Issues_Disputed_By_Consumers](images/3TopIssuesDisputedByConsumers.PNG)
+
 **6. Which state did most of the complaints come from?**
 
 For analysis, I used the below:
