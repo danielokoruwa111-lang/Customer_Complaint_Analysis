@@ -253,7 +253,7 @@ Result:
 2646          Email
 Name: Submitted via, dtype: string
 ```
-To gain insight, I used the below:
+To gain insight, I used the below to visulize:
 ```
 # Plot a pie chart
 submission_channels = df['Submitted via'].value_counts()
@@ -263,6 +263,8 @@ plt.pie(submission_channels, labels=submission_channels.index, autopct='%1.0f%%'
 plt.title('Submission Channels for Complaints')
 plt.show()
 ```
+![Submission_Channels_For_Complaints](SubmissionChannelsForComplaints.PNG)
+
 **4. Which submission channels have the highest non timely response?**
 
 For analysis, I used the below:
