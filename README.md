@@ -204,6 +204,10 @@ plt.show()
 ```
 ![Top_5_Products_with_Complaints](images/Top5ProductsWithComplaint.PNG)
 
+**Insight**
+
+The top 5 products with customer complaints are credit cards, checking/savings accounts, mortgages, credit/prepaid cards, and bank accounts/services, indicating areas for improvement in customer satisfaction and service delivery.
+
 **2. What are the top 5 issues that are commonly reported?**
 
 For analysis, I used the below:
@@ -221,7 +225,7 @@ Problem with a purchase shown on your statement    3365
 Name: count, dtype: Int64
 ```
 
-To gain insight, I used the below:
+To gain insight, I used the below to visualize:
 ```
 top_5_issues = df['Issue'].value_counts().head(5)
 
@@ -236,6 +240,10 @@ plt.tight_layout()
 plt.show()
 ```
 ![Top_5_Issues_Commonly_Reported](images/Top5IssuesCommonlyReported.PNG)
+
+**Insight**
+
+The top 5 issues reported by customers are account management, deposits/withdrawals, payment processing troubles, mortgage payment struggles, and disputed purchases, highlighting operational and transactional pain points.
 
 **3. Which submission channels are most commonly used for complaints?**
 
@@ -264,6 +272,10 @@ plt.title('Submission Channels for Complaints')
 plt.show()
 ```
 ![Submission_Channels_For_Complaints](images/SubmissionChannelsForComplaints.PNG)
+
+**Insight**
+
+The majority of complaints are submitted through the web (50%), followed by referrals (30%), indicating a strong preference for digital and personal recommendation channels.
 
 **4. Which submission channels have the highest non timely response?**
 
@@ -300,6 +312,10 @@ plt.show()
 ```
 ![Average_Response_Time_By_Submission_Channels](images/AverageResponseTimeBySubmissionChannels.PNG)
 
+**Insight**
+
+Complaints submitted via email have the highest rate of non-timely responses (5.95), indicating a need to improve response times for email inquiries.
+
 **5. What are the top 3 issues the consumers disputed the most?**
 
 For analysis, I used the below:
@@ -327,6 +343,9 @@ plt.show()
 ```
 ![3_Top_Issues_Disputed_By_Consumers](images/3TopIssuesDisputedByConsumers.PNG)
 
+**Insight**:
+Nearly half of consumer disputes relate to account management, indicating significant pain points in account handling and service delivery.
+
 **6. Which state did most of the complaints come from?**
 
 For analysis, I used the below:
@@ -353,3 +372,7 @@ plt.tight_layout()
 plt.show()
 ```
 ![State_With_Most_Complaints](images/StateWithMostComplaints.PNG)
+
+**Insight**
+
+California leads in complaints with 12,107 issues, indicating a significant customer experience challenge in this key market.
