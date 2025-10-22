@@ -378,7 +378,7 @@ plt.show()
 
 California leads in complaints with 12,107 issues, indicating a significant customer experience challenge in this key market.
 
-**Recommendation**
+## Recommendation
 
 1. **Enhance credit card customer support**: Address frequent issues and improve service delivery to reduce complaints.
 2. **Improve account management processes**: Streamline account handling and communication to alleviate common pain points.
@@ -387,6 +387,6 @@ California leads in complaints with 12,107 issues, indicating a significant cust
 5. **Target account management and transaction issues**: Focus on improving these high-dispute areas to enhance customer experience.
 6. **Boost customer support in California**: Address the high complaint volume with targeted improvements and resource allocation.
 
-**Conclusion**
+## Conclusion
 
 The analysis highlights key areas for improvement, including credit card services, account management, and transaction processing. Web and referral channels are crucial for complaint submission, but email responses require urgent attention. Targeted improvements in California and focus on high-dispute areas can enhance customer experience and reduce complaints.
