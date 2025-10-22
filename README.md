@@ -196,7 +196,8 @@ plt.show()
 **2. What are the top 5 issues that are commonly reported?**
 
 For analysis, I used the below:
-```df['Issue'].value_counts().head(5)
+```
+df['Issue'].value_counts().head(5)
 ```
 To gain insight, I used the below:
 ```
