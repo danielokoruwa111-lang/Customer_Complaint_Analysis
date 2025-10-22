@@ -272,6 +272,17 @@ For analysis, I used the below:
 # Find the average response time for each submission channel and sort the result.
 df.groupby('Submitted via')['Response Time (Days)'].mean().sort_values(ascending=False).round(2)
 ```
+Result:
+```
+Submitted via
+Email          5.95
+Referral       4.81
+Postal mail    2.80
+Phone          2.66
+Fax            2.63
+Web            1.32
+Name: Response Time (Days), dtype: float64
+```
 To gain insight, I used the below:
 ```
 # Plot a Seaborn Bar Chart
