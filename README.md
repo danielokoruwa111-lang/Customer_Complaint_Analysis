@@ -210,6 +210,17 @@ For analysis, I used the below:
 ```
 df['Issue'].value_counts().head(5)
 ```
+Result:
+```
+Issue
+Managing an account                                8849
+Deposits and withdrawals                           6127
+Trouble during payment process                     3534
+Struggling to pay mortgage                         3437
+Problem with a purchase shown on your statement    3365
+Name: count, dtype: Int64
+```
+
 To gain insight, I used the below:
 ```
 top_5_issues = df['Issue'].value_counts().head(5)
@@ -224,6 +235,7 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 ```
+
 **3. Which submission channels are most commonly used for complaints?**
 
 For analysis, I used the below:
